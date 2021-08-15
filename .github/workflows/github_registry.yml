@@ -40,7 +40,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./ 
-          file: ./Dockerfile
+          file: ./app/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ghcr.io/andrea-wood/ci:latest
